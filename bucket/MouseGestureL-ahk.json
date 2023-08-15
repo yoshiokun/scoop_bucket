@@ -1,0 +1,14 @@
+{
+  "autoupdate": {
+    "url": "https://ss1.xrea.com/pyonkichi.g1.xrea.com/archives/MGLahk$cleanVersion.zip"
+  },
+  "checkver": "MouseGestureL.ahk Ver. ([\\d.]+)",
+  "installer": {
+    "file": "Setup.vbs"
+  },
+  "hash": "",
+  "homepage": "https://hp.vector.co.jp/authors/VA018351/mglahk.html",
+  "license": "GPL-1.0-or-later",
+  "url": "https://ss1.xrea.com/pyonkichi.g1.xrea.com/archives/MGLahk140.zip",
+  "version": "1.40"
+}
