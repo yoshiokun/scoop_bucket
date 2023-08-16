@@ -1,0 +1,26 @@
+diff --git "a/.\\Setup.vbs" "b/.\\Setup.vbs"
+index 70ec9cd..6cc63ad 100644
+--- "a/.\\Setup.vbs"
++++ "b/.\\Setup.vbs"
+@@ -8,20 +8,7 @@ Option Explicit
+ 
+ Dim strCap, strMsg
+ 
+-Call SetLanguage
+-if MsgBox(strMsg, vbYesNo, strCap) = vbYes then
+-	Call SetupMGL
+-end if
+-
+-Sub SetLanguage()
+-	if GetLocale()=1041 then
+-		strCap	= "MouseGestureL.ahkのセットアップ"
+-		strMsg	= "ご利用中のWindowsに適合するMouseGestureLの実行ファイルを作成します。" & vbCrLf & "既にAutoHotkeyがインストールされている場合、この処理は不要です。" & vbCrLf & vbCrLf & "続行しますか？"
+-	else
+-		strCap	= "MouseGestureL.ahk Setup"
+-		strMsg	= "This will create an executable file of MouseGestureL that is suitable for your operating system. If AutoHotkey is already installed, this operation is not necessary." & vbCrLf & vbCrLf & "Do you want to continue setup?"
+-	end if
+-End Sub
++Call SetupMGL
+ 
+ Sub SetupMGL()
+ 	'Copy suitable AutoHotkey.exe to MouseGestureL.exe
