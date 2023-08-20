@@ -4,10 +4,10 @@
     "description": "A modern file explorer that pushes the boundaries of the Windows platform.",
     "license": "MIT",
     "url": "https://cdn.files.community/files/download/Files.Stable.exe",
-    "hash": "",
+    "hash": "a0a547efd57d394e33ebabfdcbd04278f73982f27173547e385ebff84977e84f",
     "pre_install": [
         "Start-Process 'powershell' -Wait -WindowStyle 'Hidden' -ArgumentList @('-C', \"$dir\\Files.Stable.exe\"\"\")",
-        "Remove-Item \"$dir\\setup.msixbundle\""
+        "Remove-Item \"$dir\\Files.Stable.exe\""
     ],
     "pre_uninstall": [
         "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
